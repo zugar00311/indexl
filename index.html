@@ -40,13 +40,19 @@
     .by{
       margin-top:1.5rem;
       display:flex;
-      gap:1.25rem;
+      gap:2rem;
       justify-content:center;
       align-items:center;
       flex-wrap:wrap;
     }
     .hack-by{font-size:1rem;letter-spacing:2px;text-transform:uppercase;color:var(--fg)}
-    .handles{display:flex;gap:1rem;align-items:center}
+    .handles{
+      display:flex;
+      gap:1rem;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+    }
     .handle{
       padding:.5rem .9rem;
       border-radius:999px;
@@ -55,10 +61,19 @@
       text-decoration:none;
       font-weight:600;
       font-size:.95rem;
+      display:flex;
+      align-items:center;
+      gap:.5rem;
     }
     .muted-text{color:var(--muted);font-size:.9rem;margin-top:1rem}
+    .ig-logo{
+      width:20px;
+      height:20px;
+      display:inline-block;
+      background-image:url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+      background-size:cover;
+    }
 
-    /* small screens */
     @media (max-width:520px){
       h1{font-size:4rem}
       .card{padding:2rem}
@@ -73,16 +88,13 @@
     <div class="hack-by">HACKED BY</div>
 
     <div class="by">
-      <div style="text-align:center">
-        <div style="font-size:1.6rem;font-weight:700">./Sugar1337</div>
-        <div style="font-size:1.6rem;font-weight:700">./Lowriz</div>
-      </div>
-
-      <div style="width:1px;height:48px;background:rgba(255,255,255,0.04)"></div>
-
       <div class="handles">
-        <a class="handle" href="https://instagram.com/user_one" target="_blank" rel="noopener noreferrer">@user_one</a>
-        <a class="handle" href="https://instagram.com/user_two" target="_blank" rel="noopener noreferrer">@user_two</a>
+        <a class="handle" href="https://instagram.com/sugar0031" target="_blank" rel="noopener noreferrer">
+          <span class="ig-logo"></span>Sugar0031
+        </a>
+        <a class="handle" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <span class="ig-logo"></span>Lawrex
+        </a>
       </div>
     </div>
 
